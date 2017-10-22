@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">HeyWake</string>
+
+    //Man hinh walkthrought
+    <string name="next">TIẾP</string>
+    <string name="skip">BỎ QUA</string>
+
+    <string name="screen1">Chữ gì đó để giới thiệu</string>
+    <string name="screen2">Chữ gì đó để giới thiệu màn 2</string>
+    <string name="screen3">Sau sẽ nghĩ cái nội dung này sau</string>
+    <string name="screen4">Qua cái này còn một cái nữa</string>
+    <string name="screen5">Không biết có nhiều quá không</string>
+
+    <string name="description_screen1">Mô tả chi tiết cho cái gì đó ở màn hình giới thiệu</string>
+    <string name="description_screen2">Mô tả chi tiết cho cái gì đó ở màn hình giới thiệu</string>
+    <string name="description_screen3">Mô tả chi tiết cho cái gì đó ở màn hình giới thiệu</string>
+    <string name="description_screen4">Mô tả chi tiết cho cái gì đó ở màn hình giới thiệu</string>
+    <string name="description_screen5">Mô tả chi tiết cho cái gì đó ở màn hình giới thiệu</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+</resources>
