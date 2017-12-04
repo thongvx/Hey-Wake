@@ -3,6 +3,17 @@
     package="com.lab.vxt.heywake">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <receiver android:name=".reciever.AlarmReciever"
+        android:process=":remote"
+        android:enabled="true"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+        </intent-filter>
+    </receiver>
 
     <application
         android:allowBackup="true"
@@ -22,7 +33,19 @@
             android:name=".ui.activities.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ui.activities.DetailsNewsActivity"></activity>
+        <activity android:name=".ui.activities.DetailsNewsActivity" />
+        <activity android:name=".ui.activities.AddAlarmActivity" />
+        <activity android:name=".ui.activities.AlarmModeActivity" />
+        <activity android:name=".ui.activities.AlarmScreen"></activity>
+
+        <receiver android:name=".reciever.AlarmReciever"
+            android:process=":remote"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

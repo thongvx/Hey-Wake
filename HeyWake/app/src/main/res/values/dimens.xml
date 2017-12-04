@@ -19,4 +19,16 @@
     <dimen name="slide_title">30dp</dimen>
     <dimen name="slide_desc">16dp</dimen>
     <dimen name="desc_padding">40dp</dimen>
+
+
+    <dimen name="text_time_alarm">20dp</dimen>
+    <dimen name="text_size_clock">24dp</dimen>
+
+
+
+
+    <dimen name="margin_top_cardview">4dp</dimen>
+    <dimen name="margin_left_right_cardview">8dp</dimen>
+    <dimen name="textsize_title_addalarm">20dp</dimen>
+
 </resources>

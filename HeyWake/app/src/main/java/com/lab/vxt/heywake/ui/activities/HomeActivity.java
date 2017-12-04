@@ -1,9 +1,9 @@
 package com.lab.vxt.heywake.ui.activities;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -17,7 +17,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import com.lab.vxt.heywake.R;
 import com.lab.vxt.heywake.ui.fragments.ListAlarmFragment;
@@ -41,7 +40,7 @@ public class HomeActivity extends BaseActivity{
      */
     private ViewPager mViewPager;
     private TabLayout tabLayoutHome;
-    int icons[] = {R.drawable.ic_alarm_black_24dp,R.drawable.ic_chrome_reader_mode_black_24dp,R.drawable.ic_view_headline_black_24dp};
+    int icons[] = {R.drawable.ic_access_alarm_white_24dp,R.drawable.ic_chrome_reader_mode_white_24dp,R.drawable.ic_view_headline_white_24dp};
 
 
     @Override
@@ -67,8 +66,9 @@ public class HomeActivity extends BaseActivity{
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(HomeActivity.this,AddAlarmActivity.class);
+                HomeActivity.this.startActivity(intent);
+
             }
         });
 
@@ -126,8 +126,7 @@ public class HomeActivity extends BaseActivity{
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_alarm_list, container, false);
-            TextView textView = (TextView) rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
+
             return rootView;
         }
     }
