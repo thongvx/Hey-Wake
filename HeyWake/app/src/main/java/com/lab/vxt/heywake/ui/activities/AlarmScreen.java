@@ -1,6 +1,8 @@
 package com.lab.vxt.heywake.ui.activities;
 
 import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -16,6 +18,7 @@ import android.widget.TextView;
 
 import com.lab.vxt.heywake.R;
 import com.lab.vxt.heywake.untils.AlarmManagerHelper;
+import com.lab.vxt.heywake.untils.ShakeDetector;
 
 public class AlarmScreen extends AppCompatActivity {
 
@@ -23,6 +26,9 @@ public class AlarmScreen extends AppCompatActivity {
 
     private PowerManager.WakeLock mWakelock;
     private MediaPlayer mMedia;
+    private SensorManager mSensorManager;
+    private Sensor mAccelerometer;
+    private ShakeDetector mShakeDetector;
 
     private static int WAKELOCK_TIME = 60 * 1000;
 
@@ -31,6 +37,10 @@ public class AlarmScreen extends AppCompatActivity {
         // TODO Auto-generated method stub
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.activity_alarm_screen);
+        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        mAccelerometer = mSensorManager
+                .getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mShakeDetector = new ShakeDetector();
 
         String name = getIntent().getStringExtra(AlarmManagerHelper.NAME);
         int timeHour = getIntent().getIntExtra(AlarmManagerHelper.TIME_HOUR, 0);
@@ -43,7 +53,7 @@ public class AlarmScreen extends AppCompatActivity {
         TextView tvTime = (TextView) findViewById(R.id.alarm_screen_time);
         tvTime.setText(String.format("%02d : %02d", timeHour, timeMinute));
 
-        Button dismissBtn = (Button) findViewById(R.id.alarm_screen_dismiss);
+        final Button dismissBtn = (Button) findViewById(R.id.alarm_screen_dismiss);
         dismissBtn.setOnClickListener(new View.OnClickListener() {
 
             @Override
@@ -51,6 +61,20 @@ public class AlarmScreen extends AppCompatActivity {
                 // TODO Auto-generated method stub
                 mMedia.stop();
                 finish();
+            }
+        });
+
+        mShakeDetector.setOnShakeListener(new ShakeDetector.OnShakeListener() {
+
+            @Override
+            public void onShake(int count) {
+				/*
+				 * The following method, "handleShakeEvent(count):" is a stub //
+				 * method you would use to setup whatever you want done once the
+				 * device has been shook.
+				 */
+                if(count == 5)
+                    dismissBtn.performClick();
             }
         });
 
@@ -112,6 +136,8 @@ public class AlarmScreen extends AppCompatActivity {
             mWakelock.acquire();
             Log.i(TAG, "Wakelog acquired!");
         }
+        mSensorManager.registerListener(mShakeDetector, mAccelerometer,	SensorManager.SENSOR_DELAY_UI);
+
     }
 
     @Override
@@ -122,5 +148,8 @@ public class AlarmScreen extends AppCompatActivity {
         if (mWakelock != null && mWakelock.isHeld()) {
             mWakelock.release();
         }
+
+        mSensorManager.unregisterListener(mShakeDetector);
+
     }
 }
