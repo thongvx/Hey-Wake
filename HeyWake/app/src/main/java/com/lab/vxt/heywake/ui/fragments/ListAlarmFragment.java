@@ -36,10 +36,13 @@ public class ListAlarmFragment extends BaseFragment  {
         return fragment;
     }
 
-    public void prepare(){
+    @Override
+    public void onResume() {
 
-
-
+        super.onResume();
+        adapterAlarms = new AdapterAlarms(getContext(), alarmDBHelper.getAlarms());
+        recyclerViewAlarms.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerViewAlarms.setAdapter(adapterAlarms);
     }
 
     @Override

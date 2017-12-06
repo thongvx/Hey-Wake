@@ -5,12 +5,13 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
-    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
-    <receiver android:name=".reciever.AlarmReciever"
-        android:process=":remote"
+    <receiver
+        android:name=".reciever.AlarmReciever"
         android:enabled="true"
-        android:exported="true">
+        android:exported="true"
+        android:process=":remote">
         <intent-filter>
             <action android:name="android.intent.action.BOOT_COMPLETED" />
         </intent-filter>
@@ -35,18 +36,23 @@
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.activities.DetailsNewsActivity" />
-        <activity android:name=".ui.activities.AddAlarmActivity" />
+        <activity
+            android:name=".ui.activities.AddAlarmActivity"
+            android:label="@string/title_add_alarm"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.activities.AlarmModeActivity" />
-        <activity android:name=".ui.activities.AlarmScreen"></activity>
+        <activity android:name=".ui.activities.AlarmScreen" />
 
-        <receiver android:name=".reciever.AlarmReciever"
-            android:process=":remote"
+        <receiver
+            android:name=".reciever.AlarmReciever"
             android:enabled="true"
-            android:exported="true">
+            android:exported="true"
+            android:process=":remote">
             <intent-filter>
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
+
     </application>
 
 </manifest>
