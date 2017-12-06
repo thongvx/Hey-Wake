@@ -48,12 +48,11 @@ public class AdapterAlarms extends RecyclerView.Adapter<AdapterAlarms.ViewHolder
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if (b){
-                    holder.textViewStatus.setText("Bật");
-                    holder.textViewStatus.setTextColor(Color.BLACK);
+
                     holder.textViewRepeat.setTextColor(Color.BLACK);
                 }else {
-                    holder.textViewStatus.setText("Tắt");
-                    holder.textViewStatus.setTextColor(Color.GRAY);
+
+
                     holder.textViewRepeat.setTextColor(Color.GRAY);
                 }
             }
@@ -72,7 +71,6 @@ public class AdapterAlarms extends RecyclerView.Adapter<AdapterAlarms.ViewHolder
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView textViewTime;
         public TextView textViewRepeat;
-        public TextView textViewStatus;
         public Switch switchStatus;
 
 
@@ -81,7 +79,7 @@ public class AdapterAlarms extends RecyclerView.Adapter<AdapterAlarms.ViewHolder
 
             textViewTime = (TextView)itemView.findViewById(R.id.textViewTime);
             textViewRepeat = (TextView)itemView.findViewById(R.id.textViewRepeat);
-            textViewStatus = (TextView)itemView.findViewById(R.id.textViewStatus);
+
             switchStatus = (Switch)itemView.findViewById(R.id.switchStatus);
         }
     }

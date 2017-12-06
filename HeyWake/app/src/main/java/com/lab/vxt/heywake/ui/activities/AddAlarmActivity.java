@@ -8,11 +8,13 @@ import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -25,7 +27,7 @@ import com.lab.vxt.heywake.untils.AlarmManagerHelper;
 
 import java.util.ArrayList;
 
-public class AddAlarmActivity extends BaseActivity {
+public class AddAlarmActivity extends AppCompatActivity {
     private AlarmModel alarmDetails;
     private AlarmDBHelper alarmDBHelper = new AlarmDBHelper(this);
 
@@ -34,38 +36,76 @@ public class AddAlarmActivity extends BaseActivity {
     private CardView cardViewSelectTune;
     private CardView cardViewRepeate;
     private CardView cardViewTitle;
-    private Button buttonAddAlarmCancle;
-    private Button buttonAddAlarmOk;
+
 
     private TextView textViewTuntTitle;
 
     private TimePicker timePickerAddAlarm;
+    private Toolbar mToolbar;
 
     private TextView textViewDate;
 
     private String mTitle;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_alarm);
+
+
+
         bindViews();
 
         //Trong trường hợp chỉ tạo mới
         alarmDetails = new AlarmModel();
 
+
+
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return super.onSupportNavigateUp();
+    }
+    @Override
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_save, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+
+        if (id == R.id.save_item) {
+
+            updateAlarm();
+            alarmDBHelper.createAlarm(alarmDetails);
+            AlarmManagerHelper.setAlarms(AddAlarmActivity.this);
+            onBackPressed();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
 
     protected void bindViews(){
+        mToolbar = (Toolbar)findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
+
         cardViewMode = (CardView)findViewById(R.id.cardviewMode);
         cardViewSelectTune = (CardView)findViewById(R.id.cardviewSelectTune);
         cardViewRepeate = (CardView)findViewById(R.id.cardviewRepeate);
         cardViewTitle = (CardView)findViewById(R.id.cardviewTitle);
-
-        buttonAddAlarmCancle = (Button)findViewById(R.id.buttonCancle);
-        buttonAddAlarmOk = (Button)findViewById(R.id.buttonOk);
-
 
         timePickerAddAlarm = (TimePicker)findViewById(R.id.timePickerAddAlarm);
 
@@ -103,27 +143,7 @@ public class AddAlarmActivity extends BaseActivity {
             }
         });
 
-        buttonAddAlarmOk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                AlarmManagerHelper.cancelAlarms(AddAlarmActivity.this);
-                showToast("Save");
-                updateAlarm();
-                alarmDBHelper.createAlarm(alarmDetails);
-                AlarmManagerHelper.setAlarms(AddAlarmActivity.this);
-                Intent intent = new Intent(AddAlarmActivity.this, HomeActivity.class);
-                AddAlarmActivity.this.startActivity(intent);
-            }
-        });
-        buttonAddAlarmCancle.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(AddAlarmActivity.this, HomeActivity.class);
-                AddAlarmActivity.this.startActivity(intent);
-                showToast("Thoat");
-            }
-        });
     }
 
     private void createDialog(){

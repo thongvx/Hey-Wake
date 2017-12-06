@@ -50,4 +50,9 @@ public class AlarmModel {
         return repeatingDays[dayOfWeek];
     }
 
+    public String toString(){
+
+        return this.timeHour+" : "+ timeMinute + " name : "+name +" isEnable :" +isEnabled +", id: "+id;
+    }
+
 }

@@ -131,9 +131,14 @@ public class AlarmDBHelper extends SQLiteOpenHelper {
 
         while (c.moveToNext()) {
             alarmList.add(populateModel(c));
+
         }
 
+
         if (!alarmList.isEmpty()) {
+            /*for (AlarmModel alarmModel : alarmList){
+                Log.d("Alarm : ",alarmModel.toString());
+            }*/
             return alarmList;
         }
         return null;
