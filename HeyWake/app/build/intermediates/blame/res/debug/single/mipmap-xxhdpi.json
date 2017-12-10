@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher_round.png",
+        "source": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    }
+]

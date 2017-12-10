@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\.android\build-cache\888c81de235d5e3b7a03f52dbb8d79c5c7138254\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3ff7118a036009ee0504ee1b96e858dcc1bec61f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_7210b69664fcdfa96f00a011087f6fdbe1885607\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\.android\build-cache\d7dfd1f9a894a1e9da864342d2958b06c0a3423d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_15f9eb21411b7b0566887959d949ac0d846aeb60\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\.android\build-cache\01bf510d4125e02b26f2f41974d3bbaaec24675d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_70d77e94e1e8fedf80d18d3f6760a3e07e49e5fd\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\.android\build-cache\dbd4fae2d5b6f18aaf150f8121dfdfc93b2b1032\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_276588057c6cd188a5889ed00fb2048371ab0372\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\.android\build-cache\55d3e7956f2af124dfbbf7d5712a26c8a39eeb7e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1cff333bdc678d997480ad839f3d4a1f7302c87b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\.android\build-cache\0dd1c4ee6b96f62b6db1bc0e4fd239ebfb36cdc5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_18c22b20dc5b5fb292b7420535a3b13fc5728900\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_72e1f96ed009e76edba794f87622f7cf25310058\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\.android\build-cache\c089827c6ceca1af756764fb6d2bd83bfe70b13e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_f1f38a0d227fccb08d402200483b986f09e154d8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\.android\build-cache\37c867cb8f77dbfe32af6e6d33ad5536951d5192\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_239cef37e2b3568b307a457a72d7828bbb21df17\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\.android\build-cache\532d2e4be955177d2eb52fe56f2f16829bd16b79\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_431bc50e413857c4751763bd2116e59447cdca14\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\.android\build-cache\d75a75b150990f61a19368201af6425c7c25e04c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3c849b388bccb0187a83874ff90c1eadb4d5c334\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\.android\build-cache\dee10b889731ab3b4c418f3f514bbc3311c85198\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_28b6f0766a5409dab2ca71ad9d9a1b65f38a5140\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-26.0.0-alpha1_5e2ff88a681fe1c7fefdbc426257ee08a097e7a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\.android\build-cache\ee6d61008c2ed13bcc17eee5b330d181547e13cd\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cc589c235f03df31d70b9a01696b79ed673fb0e1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4d1fa3265b7434dd3f754099e7079e8a0fd123df">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_77735673d809837158fd34d850fb9a7bf40af251\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\.android\build-cache\f74d736afb498a092511f500864da50c0d062ed5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_eaf6fd43158d8fb08e07c8ed8a5049c843a52a62\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\.android\build-cache\98f2853cd8485a434179aeebe43b09dc2450b1a8\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="D:\AndroidProjects\Hey-Wake\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_9473b9d94cfd1812e7cda440bf38ecdfdac40758\classes.dex" />
+    </item>
+
+</items>

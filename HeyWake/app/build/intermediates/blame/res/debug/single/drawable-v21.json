@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_hide_password.xml",
+        "source": "C:\\Users\\Alexander\\.android\\build-cache\\ee6d61008c2ed13bcc17eee5b330d181547e13cd\\output\\res\\drawable-v21\\avd_hide_password.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_edit_text_material.xml",
+        "source": "C:\\Users\\Alexander\\.android\\build-cache\\98f2853cd8485a434179aeebe43b09dc2450b1a8\\output\\res\\drawable-v21\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\notification_action_background.xml",
+        "source": "C:\\Users\\Alexander\\.android\\build-cache\\98f2853cd8485a434179aeebe43b09dc2450b1a8\\output\\res\\drawable-v21\\notification_action_background.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\avd_show_password.xml",
+        "source": "C:\\Users\\Alexander\\.android\\build-cache\\ee6d61008c2ed13bcc17eee5b330d181547e13cd\\output\\res\\drawable-v21\\avd_show_password.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_btn_colored_material.xml",
+        "source": "C:\\Users\\Alexander\\.android\\build-cache\\98f2853cd8485a434179aeebe43b09dc2450b1a8\\output\\res\\drawable-v21\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\abc_action_bar_item_background_material.xml",
+        "source": "C:\\Users\\Alexander\\.android\\build-cache\\98f2853cd8485a434179aeebe43b09dc2450b1a8\\output\\res\\drawable-v21\\abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_bottom_navigation_item_background.xml",
+        "source": "C:\\Users\\Alexander\\.android\\build-cache\\ee6d61008c2ed13bcc17eee5b330d181547e13cd\\output\\res\\drawable-v21\\design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21\\design_password_eye.xml",
+        "source": "C:\\Users\\Alexander\\.android\\build-cache\\ee6d61008c2ed13bcc17eee5b330d181547e13cd\\output\\res\\drawable-v21\\design_password_eye.xml"
+    }
+]

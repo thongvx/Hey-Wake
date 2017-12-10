@@ -1,0 +1,50 @@
+[
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_access_alarm_white_24dp.png",
+        "source": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\src\\main\\res\\drawable-hdpi\\ic_access_alarm_white_24dp.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_view_headline_white_24dp.png",
+        "source": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\src\\main\\res\\drawable-hdpi\\ic_view_headline_white_24dp.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_add_white_36dp.png",
+        "source": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\src\\main\\res\\drawable-hdpi\\ic_add_white_36dp.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_chrome_reader_mode_white_24dp.png",
+        "source": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\src\\main\\res\\drawable-hdpi\\ic_chrome_reader_mode_white_24dp.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_videogame_asset_white_48dp.png",
+        "source": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\src\\main\\res\\drawable-hdpi\\ic_videogame_asset_white_48dp.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_add_white_24dp.png",
+        "source": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\src\\main\\res\\drawable-hdpi\\ic_add_white_24dp.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_view_headline_black_24dp.png",
+        "source": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\src\\main\\res\\drawable-hdpi\\ic_view_headline_black_24dp.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_alarm_black_24dp.png",
+        "source": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\src\\main\\res\\drawable-hdpi\\ic_alarm_black_24dp.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_vibration_white_48dp.png",
+        "source": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\src\\main\\res\\drawable-hdpi\\ic_vibration_white_48dp.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_chrome_reader_mode_black_24dp.png",
+        "source": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\src\\main\\res\\drawable-hdpi\\ic_chrome_reader_mode_black_24dp.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_play_arrow_white_36dp.png",
+        "source": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\src\\main\\res\\drawable-hdpi\\ic_play_arrow_white_36dp.png"
+    },
+    {
+        "merged": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_alarm_white_48dp.png",
+        "source": "D:\\AndroidProjects\\Hey-Wake\\HeyWake\\app\\src\\main\\res\\drawable-hdpi\\ic_alarm_white_48dp.png"
+    }
+]

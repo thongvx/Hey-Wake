@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\AndroidProjects\Hey-Wake\HeyWake\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\AndroidProjects\Hey-Wake\HeyWake\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_3657725f7c07955337b2a82f68abcc654c2cb716\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\AndroidProjects\Hey-Wake\HeyWake\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a73575a25810bd6e065d7721f1f91bd9d7c7a28b">
+        <dex dex="D:\AndroidProjects\Hey-Wake\HeyWake\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_4930ddb7587b2a124ebda8a3e86ce3e64da29338\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Alexander\.android\build-cache\888c81de235d5e3b7a03f52dbb8d79c5c7138254\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="D:\AndroidProjects\Hey-Wake\HeyWake\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3ff7118a036009ee0504ee1b96e858dcc1bec61f\classes.dex" />
+    </item>
+
+</items>

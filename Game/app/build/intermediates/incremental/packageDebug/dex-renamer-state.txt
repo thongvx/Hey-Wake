@@ -1,0 +1,7 @@
+#Sun Dec 10 18:48:46 GMT+07:00 2017
+base.0=D\:\\AndroidProjects\\Hey-Wake\\Game\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_72e1f96ed009e76edba794f87622f7cf25310058
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=D\:\\AndroidProjects\\Hey-Wake\\Game\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_77735673d809837158fd34d850fb9a7bf40af251\\classes.dex
+base.1=D\:\\AndroidProjects\\Hey-Wake\\Game\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_77735673d809837158fd34d850fb9a7bf40af251
+file.0=D\:\\AndroidProjects\\Hey-Wake\\Game\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_72e1f96ed009e76edba794f87622f7cf25310058\\classes.dex
