@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Firebase</title>
+	<link href="./layout4/css/layout.min.css" rel="stylesheet" type="text/css"/>
+  <link href="./layout4/css/themes/light.min.css" rel="stylesheet" type="text/css" id="style_color"/>
+  <link href="./layout4/css/custom.min.css" rel="stylesheet" type="text/css"/>
+  <link href="./layout4/css/custom.css" rel="stylesheet" type="text/css"/>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+  <link href="./global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="./global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+  <link href="./global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="./global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+  <!-- END GLOBAL MANDATORY STYLES -->
+  <!-- BEGIN THEME GLOBAL STYLES -->
+  <link href="./global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+  <link href="./global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="col-md-3"></div>
+  <div class="col-md-6 ">
+      <!-- BEGIN SAMPLE FORM PORTLET-->
+      <div class="portlet light bordered">
+          <div class="portlet-title">
+              <div class="caption font-green">
+                  <i class="icon-pin font-green"></i>
+                  <span class="caption-subject bold uppercase"> Mẫu tạo câu hỏi</span>
+              </div>
+          </div>
+          <div class="portlet-body form">
+              <form role="form">
+                  <div class="form-body">
+                      <div class="form-group form-md-line-input form-md-floating-label">
+                          <textarea class="form-control" rows="3" id="question"></textarea>
+                          <label for="form_control_1">Câu hỏi</label>
+                      </div>
+                      <div class="form-group form-md-line-input form-md-floating-label has-error">
+                          <input type="text" class="form-control" id="false1">
+                          <label for="form_control_1">Đáp án sai 1</label>
+                      </div>
+                      <div class="form-group form-md-line-input form-md-floating-label has-error">
+                          <input type="text" class="form-control" id="false2">
+                          <label for="form_control_1">Đáp án sai 2</label>
+                      </div>
+                      <div class="form-group form-md-line-input form-md-floating-label has-error">
+                          <input type="text" class="form-control" id="false3">
+                          <label for="form_control_1">Đáp án sai 3</label>
+                      </div>
+
+                      <div class="form-group form-md-line-input form-md-floating-label has-success">
+                          <input type="text" class="form-control" id="true4">
+                          <label for="form_control_1">Đáp án đúng</label>
+                      </div>
+                  </div>
+                  <div class="form-actions noborder" style="padding-top: 0;">
+                      <button type="button" class="btn blue" onclick="create()">Tạo câu hỏi</button>
+                      <button type="button" class="btn default" onclick="cancel()">Hủy</button>
+                  </div>
+              </form>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-3"></div>
+<script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDJboh9cLQeNVIeJAGli_HPvLwyalVPTTU",
+    authDomain: "heywake-64ccd.firebaseapp.com",
+    databaseURL: "https://heywake-64ccd.firebaseio.com",
+    projectId: "heywake-64ccd",
+    storageBucket: "heywake-64ccd.appspot.com",
+    messagingSenderId: "292029098394"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="index.js"></script>
+ <script src="./global/plugins/jquery.min.js" type="text/javascript"></script>
+        <script src="./global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="./global/plugins/js.cookie.min.js" type="text/javascript"></script>
+        <script src="./global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>
+        <script src="./global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+        <script src="./global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+        <script src="./global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <!-- END CORE PLUGINS -->
+        <!-- BEGIN THEME GLOBAL SCRIPTS -->
+        <script src="./global/scripts/app.min.js" type="text/javascript"></script>
+        <!-- END THEME GLOBAL SCRIPTS -->
+        <!-- BEGIN THEME LAYOUT SCRIPTS -->
+        <script src="./layout4/scripts/layout.min.js" type="text/javascript"></script>
+        <script src="./layout4/scripts/demo.min.js" type="text/javascript"></script>
+</body>
+</html>

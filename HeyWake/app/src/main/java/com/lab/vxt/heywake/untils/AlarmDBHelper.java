@@ -13,13 +13,14 @@ import com.lab.vxt.heywake.models.AlarmModel;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.lab.vxt.heywake.untils.Constants.DATABASE_NAME;
+import static com.lab.vxt.heywake.untils.Constants.DATABASE_VERSION;
+
 /**
  * Created by VXT on 11/22/2017.
  */
 
 public class AlarmDBHelper extends SQLiteOpenHelper {
-    public static final int DATABASE_VERSION = 1;
-    public static final String DATABASE_NAME = "alarmclock.db";
 
     private static final String SQL_CREATE_ALARM = "CREATE TABLE " + AlarmContract.Alarm.TABLE_NAME + " (" +
             AlarmContract.Alarm._ID + " INTEGER PRIMARY KEY AUTOINCREMENT," +
