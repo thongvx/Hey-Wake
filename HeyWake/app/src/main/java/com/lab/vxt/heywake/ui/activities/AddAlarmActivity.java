@@ -7,9 +7,9 @@ import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
 import android.view.Menu;
@@ -32,10 +32,10 @@ public class AddAlarmActivity extends AppCompatActivity {
     private AlarmDBHelper alarmDBHelper = new AlarmDBHelper(this);
 
     private Toolbar toolbar;
-    private CardView cardViewMode;
-    private CardView cardViewSelectTune;
-    private CardView cardViewRepeate;
-    private CardView cardViewTitle;
+    private ConstraintLayout constraintLayoutAlarmMode;
+    private ConstraintLayout constraintLayoutSelectTune;
+    private ConstraintLayout constraintLayoutRepeate;
+    private ConstraintLayout constraintLayoutTitle;
 
 
     private TextView textViewTuntTitle;
@@ -53,14 +53,10 @@ public class AddAlarmActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_alarm);
 
-
-
         bindViews();
 
         //Trong trường hợp chỉ tạo mới
         alarmDetails = new AlarmModel();
-
-
 
     }
 
@@ -102,17 +98,17 @@ public class AddAlarmActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true);
 
 
-        cardViewMode = (CardView)findViewById(R.id.cardviewMode);
-        cardViewSelectTune = (CardView)findViewById(R.id.cardviewSelectTune);
-        cardViewRepeate = (CardView)findViewById(R.id.cardviewRepeate);
-        cardViewTitle = (CardView)findViewById(R.id.cardviewTitle);
+        constraintLayoutAlarmMode = (ConstraintLayout) findViewById(R.id.constraintLayoutAlarmMode);
+        constraintLayoutSelectTune = (ConstraintLayout) findViewById(R.id.constraintLayoutSelectTune);
+        constraintLayoutRepeate = (ConstraintLayout) findViewById(R.id.constraintLayoutRepeate);
+        constraintLayoutTitle = (ConstraintLayout) findViewById(R.id.constraintLayoutTitle);
 
         timePickerAddAlarm = (TimePicker)findViewById(R.id.timePickerAddAlarm);
 
         textViewDate = (TextView)findViewById(R.id.textViewDate);
         textViewTuntTitle = (TextView)findViewById(R.id.textViewTuneTitle);
 
-        cardViewMode.setOnClickListener(new View.OnClickListener() {
+        constraintLayoutAlarmMode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(AddAlarmActivity.this, AlarmModeActivity.class);
@@ -120,19 +116,19 @@ public class AddAlarmActivity extends AppCompatActivity {
             }
         });
 
-        cardViewRepeate.setOnClickListener(new View.OnClickListener() {
+        constraintLayoutRepeate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 createDialog();
             }
         });
-        cardViewTitle.setOnClickListener(new View.OnClickListener() {
+        constraintLayoutTitle.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 createTitleDialog();
             }
         });
-        cardViewSelectTune.setOnClickListener(new View.OnClickListener() {
+        constraintLayoutSelectTune.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(RingtoneManager.ACTION_RINGTONE_PICKER);

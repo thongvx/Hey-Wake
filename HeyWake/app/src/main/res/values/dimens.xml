@@ -24,7 +24,7 @@
     <dimen name="text_size_clock">24dp</dimen>
 
 
-    <dimen name="margin_top_cardview">4dp</dimen>
+    <dimen name="margin_top_cardview">8dp</dimen>
     <dimen name="margin_left_right_cardview">8dp</dimen>
     <dimen name="textsize_title_addalarm">20dp</dimen>
 
