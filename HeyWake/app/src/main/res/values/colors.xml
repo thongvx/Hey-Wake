@@ -6,11 +6,11 @@
 
 
     //Màn hình walk throught
-    <color name="screen1">#00ACC1</color>
-    <color name="screen2">#9C27B0</color>
-    <color name="screen3">#009688</color>
-    <color name="screen4">#FF9800</color>
-    <color name="screen5">#5D4037</color>
+    <color name="screen1">#6E60B5</color>
+    <color name="screen2">#FFF3D1</color>
+    <color name="screen3">#57BBBB</color>
+    <color name="screen4">#AA789E</color>
+    <color name="screen5">#628C9A</color>
     
     <color name="dot_dark_screen1">#00838F</color>
     <color name="dot_dark_screen2">#6A1B9A</color>

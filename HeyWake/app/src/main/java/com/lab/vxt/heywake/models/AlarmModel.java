@@ -24,6 +24,8 @@ public class AlarmModel {
     public Uri alarmTone;
     public String name;
     public boolean isEnabled;
+    public String style;  // cách tắt báo thức
+    public int numOfReapeat; // số lần lặp lại
 
     public AlarmModel() {
         repeatingDays = new boolean[7];
@@ -31,7 +33,7 @@ public class AlarmModel {
 
     public AlarmModel(long id, int timeHour, int timeMinute,
                       boolean[] repeatingDays, boolean repeatWeekly, Uri alarmTone,
-                      String name, boolean isEnabled) {
+                      String name, boolean isEnabled,String style, int numOfReapeat) {
         this.id = id;
         this.timeHour = timeHour;
         this.timeMinute = timeMinute;

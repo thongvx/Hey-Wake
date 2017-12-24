@@ -15,7 +15,7 @@
             android:layout_width="@dimen/walk_through_image_width"
             android:layout_height="@dimen/walk_through_image_width"
             android:layout_marginBottom="@dimen/walk_throught_margin_bottom"
-            android:src="@drawable/car" />
+            android:src="@drawable/screen1img" />
 
         <TextView
             android:layout_marginTop="@dimen/walk_throught_margin_top"

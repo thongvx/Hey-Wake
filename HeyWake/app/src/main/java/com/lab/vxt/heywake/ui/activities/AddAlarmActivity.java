@@ -139,7 +139,6 @@ public class AddAlarmActivity extends AppCompatActivity {
             }
         });
 
-
     }
 
     private void createDialog(){
@@ -234,6 +233,9 @@ public class AddAlarmActivity extends AppCompatActivity {
         alarmDetails.timeHour = timePickerAddAlarm.getCurrentHour().intValue();
         alarmDetails.name = mTitle;
         alarmDetails.isEnabled = true;
+
     }
+
+
 
 }
