@@ -4,8 +4,41 @@ var false1 =document.getElementById('false1');
 var false2 =document.getElementById('false2');
 var false3 =document.getElementById('false3');
 var true4 =document.getElementById('true4');
+var quoteContent =document.getElementById('quoteContent');
 
-function create() {
+
+function setVisibleView(view, state){
+	var viewIndex = document.querySelectorAll (view);
+	for (var i = viewIndex.length - 1; i >= 0; i--) {
+		viewIndex[i].style.display = state;
+	}
+}
+
+function setVisibleQuestion(){
+	setVisibleView(".index", "none");
+	setVisibleView(".question", "initial");
+	setVisibleView(".quote", "none");
+}
+
+function setVisibleQuote(){
+	setVisibleView(".index", "none");
+	setVisibleView(".question", "none");
+	setVisibleView(".quote", "initial");
+}
+
+function setVisibleIndex(){
+	setVisibleView(".index", "initial");
+	setVisibleView(".question", "none");
+	setVisibleView(".quote", "none");
+}
+
+function back(){
+	setVisibleIndex();
+}
+
+
+
+function createQuestion() {
 	var firebaseRef = firebase.database().ref().child("MultipleChoiceQuestion");
 	var f1 = false1.value;
 	var f2 = false2.value;
@@ -33,4 +66,19 @@ function cancel() {
 	false3.value = "";
 	true4.value = "";
 	question.value = "";
+	quoteContent.value = "";
+}
+
+function createQuote(){
+	var firebaseRef = firebase.database().ref().child("Quotes");
+	var content = quoteContent.value;
+
+	if(content == ""){
+		window.alert("Hãy nhập nội dung câu nói");
+	}
+	else{
+		var keyFirebase = firebaseRef.push().getKey();
+		firebaseRef.child(keyFirebase).set(content);
+		cancel();
+	}
 }

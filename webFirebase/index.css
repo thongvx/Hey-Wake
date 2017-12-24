@@ -1,0 +1,17 @@
+body{
+	background-color: #e5e5e5;
+}
+.paddingTop{
+	padding-top: 50px;
+}
+
+.btn-question{
+	background-color: #36c6d3;
+	color: #ffffff;
+}
+
+.btn-quote{
+	background-color: #337ab7;
+	color: #ffffff;
+}
+

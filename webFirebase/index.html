@@ -15,20 +15,33 @@
   <!-- BEGIN THEME GLOBAL STYLES -->
   <link href="./global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
   <link href="./global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<body>
+<body onload="setVisibleIndex()">
   <div class="col-md-3"></div>
-  <div class="col-md-6 ">
+  <div class="col-md-6 paddingTop">
       <!-- BEGIN SAMPLE FORM PORTLET-->
       <div class="portlet light bordered">
           <div class="portlet-title">
               <div class="caption font-green">
                   <i class="icon-pin font-green"></i>
-                  <span class="caption-subject bold uppercase"> Mẫu tạo câu hỏi</span>
+                  <span class="caption-subject bold uppercase question"> Mẫu tạo câu hỏi</span>
+                  <span class="caption-subject bold uppercase index"> Chọn chức năng</span>
+                  <span class="caption-subject bold uppercase quote"> Mẫu tạo câu nói hay</span>
+              </div>
+              <div class="actions  question">
+                <div class="btn-group">
+                    <button type="button" class="btn blue" onclick="back()"><i class="fa fa-chevron-left "></i> Quay lại</button>
+                </div>
+              </div>
+              <div class="actions quote">
+                <div class="btn-group">
+                    <button type="button" class="btn blue" onclick="back()"><i class="fa fa-chevron-left "></i> Quay lại</button>
+                </div>
               </div>
           </div>
           <div class="portlet-body form">
-              <form role="form">
+              <form role="form" class="question" >
                   <div class="form-body">
                       <div class="form-group form-md-line-input form-md-floating-label">
                           <textarea class="form-control" rows="3" id="question"></textarea>
@@ -46,16 +59,31 @@
                           <input type="text" class="form-control" id="false3">
                           <label for="form_control_1">Đáp án sai 3</label>
                       </div>
-
                       <div class="form-group form-md-line-input form-md-floating-label has-success">
                           <input type="text" class="form-control" id="true4">
                           <label for="form_control_1">Đáp án đúng</label>
                       </div>
                   </div>
                   <div class="form-actions noborder" style="padding-top: 0;">
-                      <button type="button" class="btn blue" onclick="create()">Tạo câu hỏi</button>
+                      <button type="button" class="btn blue" onclick="createQuestion()">Tạo câu hỏi</button>
                       <button type="button" class="btn default" onclick="cancel()">Hủy</button>
                   </div>
+              </form>
+              <form role="form " class="quote">
+                <div class="form-body quote">
+                    <div class="form-group form-md-line-input form-md-floating-label">
+                        <textarea class="form-control" rows="3" id="quoteContent"></textarea>
+                        <label for="form_control_1">Nội dung câu nói</label>
+                    </div>
+                </div>
+                <div class="form-actions noborder" style="padding-top: 0;">
+                      <button type="button" class="btn blue" onclick="createQuote()">Tạo câu nói hay</button>
+                      <button type="button" class="btn default" onclick="cancel()">Hủy</button>
+                  </div>
+              </form>
+              <form role="form " class="index">
+                <button type="button" class="btn btn-lg btn-circle btn-question" onclick="setVisibleQuestion()"> Thêm câu hỏi <i class="fa fa-question"></i></button>
+                <button type="button" class="btn btn-lg btn-circle btn-quote" onclick="setVisibleQuote()"> Thêm câu nói hay <i class="fa fa-edit"></i></button>
               </form>
           </div>
       </div>
