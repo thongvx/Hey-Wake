@@ -1,0 +1,4 @@
+#Sun Dec 03 10:10:14 ICT 2017
+base.0=E\:\\CongNghePhanMem\\GIT\\Game\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_0
+renamed.0=classes.dex
+file.0=E\:\\CongNghePhanMem\\GIT\\Game\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_0\\classes.dex
