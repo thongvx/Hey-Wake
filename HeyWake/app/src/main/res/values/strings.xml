@@ -38,7 +38,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="setting">Settings</string>
     <string name="sleep_setting">Sleep hour</string>
-    <string name="event_setting" >Event</string>
+    <string name="event_setting">Event</string>
     <string name="about_setting">Introduction</string>
     <string name="reset">Reset</string>
     <string name="sleepContent">Experts\' research indicates that we need at least seven hours of sleep a night to keep our bodies awake. Depending on the circumstances, the environment of each person to calculates the sleep time for himself or herself. In particular, sleep should start before 11PM.</string>

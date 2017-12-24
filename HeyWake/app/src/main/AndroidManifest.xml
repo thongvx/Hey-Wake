@@ -25,9 +25,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activities.WalkthroughActivity">
-
-        </activity>
+        <activity android:name=".ui.activities.WalkthroughActivity" />
         <activity
             android:name=".ui.activities.HomeActivity"
             android:label="@string/title_activity_home"
@@ -57,7 +55,9 @@
         </receiver>
 
         <activity android:name=".ui.activities.QuoteActivity" />
-        <activity android:name=".ui.activities.SettingActivity"></activity>
+        <activity android:name=".ui.activities.SettingActivity" />
+        <activity android:name=".ui.activities.AlarmShakeActivity" />
+        <activity android:name=".ui.activities.SplashActivity"></activity>
     </application>
 
 </manifest>

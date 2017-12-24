@@ -3,6 +3,7 @@ package com.lab.vxt.heywake.ui.activities;
 import android.app.Activity;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
@@ -12,10 +13,13 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.NumberPicker;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -24,6 +28,7 @@ import com.lab.vxt.heywake.R;
 import com.lab.vxt.heywake.models.AlarmModel;
 import com.lab.vxt.heywake.untils.AlarmDBHelper;
 import com.lab.vxt.heywake.untils.AlarmManagerHelper;
+import com.lab.vxt.heywake.untils.Constants;
 
 import java.util.ArrayList;
 
@@ -36,28 +41,28 @@ public class AddAlarmActivity extends AppCompatActivity {
     private ConstraintLayout constraintLayoutSelectTune;
     private ConstraintLayout constraintLayoutRepeate;
     private ConstraintLayout constraintLayoutTitle;
-
-
     private TextView textViewTuntTitle;
-
     private TimePicker timePickerAddAlarm;
     private Toolbar mToolbar;
-
     private TextView textViewDate;
-
     private String mTitle;
+
+    private ConstraintLayout constraintLayoutDefault;
+    private ConstraintLayout constraintLayoutShake;
+    private ConstraintLayout constraintLayoutCountNum;
+    private ConstraintLayout constraintLayoutRememberTask;
+    private ConstraintLayout previousConstraintLayout;
+
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_alarm);
-
         bindViews();
-
         //Trong trường hợp chỉ tạo mới
         alarmDetails = new AlarmModel();
-
+        alarmDetails.style = Constants.DEFAULT_MODE;
     }
 
     @Override
@@ -111,8 +116,7 @@ public class AddAlarmActivity extends AppCompatActivity {
         constraintLayoutAlarmMode.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(AddAlarmActivity.this, AlarmModeActivity.class);
-                startActivity(intent);
+                createDialogChooseStyle();
             }
         });
 
@@ -236,6 +240,86 @@ public class AddAlarmActivity extends AppCompatActivity {
 
     }
 
+    private void createDialogChooseStyle(){
+        LayoutInflater inflater = getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.dialog_choose_style,null);
+        constraintLayoutDefault = (ConstraintLayout)dialogView.findViewById(R.id.constraintLayoutDefault);
+        constraintLayoutCountNum = (ConstraintLayout)dialogView.findViewById(R.id.constraintLayoutCountNum);
+        constraintLayoutShake = (ConstraintLayout)dialogView.findViewById(R.id.constraintLayoutShake);
+        constraintLayoutRememberTask = (ConstraintLayout)dialogView.findViewById(R.id.constraintLayoutRememberTask);
+        previousConstraintLayout = constraintLayoutDefault;
+        dialogView.setBackgroundColor(Color.TRANSPARENT);
 
 
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setView(dialogView);
+        final AlertDialog chooseModeDialog = alert.create();
+        constraintLayoutRememberTask.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onclick(constraintLayoutRememberTask);
+                alarmDetails.style = Constants.SHAKE_MODE;
+            }
+        });
+        constraintLayoutDefault.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onclick(constraintLayoutDefault);
+                alarmDetails.style = Constants.DEFAULT_MODE;
+            }
+        });
+        constraintLayoutShake.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onclick(constraintLayoutShake);
+                createChooseNumberDialog();
+
+                chooseModeDialog.dismiss();
+
+            }
+        });
+        constraintLayoutCountNum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onclick(constraintLayoutCountNum);
+                alarmDetails.style = Constants.COUNT_NUMBER_MODE;
+            }
+        });
+
+        chooseModeDialog.getWindow().getDecorView().setBackgroundResource(android.R.color.transparent);
+        chooseModeDialog.show();
+    }
+
+    private void createChooseNumberDialog(){
+        LayoutInflater inflater = getLayoutInflater();
+        View dialogView = inflater.inflate(R.layout.dialog_add_shake_number,null);
+
+        final String[] displayedValues = {"30","35","40","45","50","25","20"};
+        final NumberPicker numberPickerCount = (NumberPicker)dialogView.findViewById(R.id.numberPickerCount);
+        Button buttonOk = (Button)dialogView.findViewById(R.id.buttonOk);
+        numberPickerCount.setMinValue(0);
+        numberPickerCount.setMaxValue(displayedValues.length-1);
+        numberPickerCount.setDisplayedValues(displayedValues);
+
+
+        AlertDialog.Builder alert = new AlertDialog.Builder(this);
+        alert.setView(dialogView);
+        AlertDialog chooseModeDialog = alert.create();
+        buttonOk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alarmDetails.style = Constants.COUNT_NUMBER_MODE;
+                alarmDetails.numOfReapeat = Integer.parseInt(displayedValues[numberPickerCount.getValue()]);
+            }
+        });
+        chooseModeDialog.getWindow().getDecorView().setBackgroundResource(android.R.color.transparent);
+        chooseModeDialog.show();
+    }
+    private void onclick(ConstraintLayout layout){
+        if (layout != previousConstraintLayout){
+            layout.setBackgroundResource(R.drawable.bg_alarmode_active);
+            previousConstraintLayout.setBackgroundResource(R.drawable.bg_alarmode_inactive);
+            previousConstraintLayout = layout;
+        }
+    }
 }

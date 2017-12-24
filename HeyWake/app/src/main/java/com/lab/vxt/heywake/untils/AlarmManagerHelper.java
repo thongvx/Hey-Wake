@@ -25,6 +25,7 @@ public class AlarmManagerHelper extends BroadcastReceiver {
     public static final String TIME_MINUTE = "timeMinute";
     public static final String TONE = "alarmTone";
 
+
     String TAG = this.getClass().getSimpleName();
 
     @Override
@@ -193,6 +194,8 @@ public class AlarmManagerHelper extends BroadcastReceiver {
         intent.putExtra(TIME_HOUR, model.timeHour);
         intent.putExtra(TIME_MINUTE, model.timeMinute);
         intent.putExtra(TONE, model.alarmTone.toString());
+        intent.putExtra("MODE",model.style);
+        intent.putExtra("NUM_REPEATE",model.numOfReapeat);
 
         return PendingIntent.getService(context, (int) model.id, intent, PendingIntent.FLAG_UPDATE_CURRENT);
     }
