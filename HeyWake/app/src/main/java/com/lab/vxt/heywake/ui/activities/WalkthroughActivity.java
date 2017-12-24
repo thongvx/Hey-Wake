@@ -32,8 +32,8 @@ public class WalkthroughActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        /*MultipleChoiceQuestionService multipleChoiceQuestionService = MultipleChoiceQuestionService.getInstance();
+/*
+        MultipleChoiceQuestionService multipleChoiceQuestionService = MultipleChoiceQuestionService.getInstance();
         multipleChoiceQuestionService.getData(new ILoadService() {
             @Override
             public void onLoadSuccess(Object object) {

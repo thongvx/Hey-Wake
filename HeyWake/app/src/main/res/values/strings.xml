@@ -5,17 +5,16 @@
     <string name="next">TIẾP</string>
     <string name="skip">BỎ QUA</string>
 
-    <string name="screen1">Chữ gì đó để giới thiệu</string>
-    <string name="screen2">Chữ gì đó để giới thiệu màn 2</string>
-    <string name="screen3">Sau sẽ nghĩ cái nội dung này sau</string>
-    <string name="screen4">Qua cái này còn một cái nữa</string>
-    <string name="screen5">Không biết có nhiều quá không</string>
-
-    <string name="description_screen1">Mô tả chi tiết cho cái gì đó ở màn hình giới thiệu</string>
-    <string name="description_screen2">Mô tả chi tiết cho cái gì đó ở màn hình giới thiệu</string>
-    <string name="description_screen3">Mô tả chi tiết cho cái gì đó ở màn hình giới thiệu</string>
-    <string name="description_screen4">Mô tả chi tiết cho cái gì đó ở màn hình giới thiệu</string>
-    <string name="description_screen5">Mô tả chi tiết cho cái gì đó ở màn hình giới thiệu</string>
+    <string name="screen1">Chào mừng!</string>
+    <string name="screen2">Chào ngày mới\nhoàn toàn khác </string>
+    <string name="screen3">Tin tức luôn cập nhật</string>
+    <string name="screen4">Hey Wake ≡ "Gấu"</string>
+    <string name="screen5">Bắt đầu thôi</string>
+    <string name="description_screen1">Chúng tôi biết mùa Đông rất lạnh... nhưng đừng vì vậy mà ngủ dậy muộn!</string>
+    <string name="description_screen2">Không chỉ là 1 click, bạn sẽ thực sự bị thuyết phục khi tỉnh dậy với những trò chơi có một không hai.</string>
+    <string name="description_screen3">Chúng tôi luôn mang đến cho bạn những tin tức mới nhất hàng ngày và được tổng hợp lại đầy đủ nhất.</string>
+    <string name="description_screen4">Không cần phải có "Gấu"  nhắc đi ngủ, Hey Wake sẽ là người bạn luôn sẵn sàng nhắc bạn đi ngủ mỗi tối</string>
+    <string name="description_screen5">Còn bây giờ, hãy cũng Hey Wake trải nghiệm những tính năng thú vị nhé!</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
