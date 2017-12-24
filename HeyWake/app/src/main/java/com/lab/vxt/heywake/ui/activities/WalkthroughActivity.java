@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.text.Html;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,13 +18,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.lab.vxt.heywake.R;
-import com.lab.vxt.heywake.models.MultipleChoiceQuestion;
-import com.lab.vxt.heywake.services.ILoadService;
-import com.lab.vxt.heywake.services.MultipleChoiceQuestionService;
 import com.lab.vxt.heywake.untils.PrefManager;
-import com.lab.vxt.heywake.untils.QuestionDB;
-
-import java.util.ArrayList;
 
 public class WalkthroughActivity extends BaseActivity {
     private ViewPager viewPager;
@@ -40,7 +33,7 @@ public class WalkthroughActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        MultipleChoiceQuestionService multipleChoiceQuestionService = MultipleChoiceQuestionService.getInstance();
+        /*MultipleChoiceQuestionService multipleChoiceQuestionService = MultipleChoiceQuestionService.getInstance();
         multipleChoiceQuestionService.getData(new ILoadService() {
             @Override
             public void onLoadSuccess(Object object) {
@@ -54,7 +47,7 @@ public class WalkthroughActivity extends BaseActivity {
             public void onLoadFail(Object object) {
                 Log.d("faile", object.toString());
             }
-        });
+        });*/
 
         // Checking for first time launch - before calling setContentView()
         prefManager = new PrefManager(this);

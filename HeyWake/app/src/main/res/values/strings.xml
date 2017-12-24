@@ -35,4 +35,12 @@
     <string name="title_add_alarm">Thêm báo thức</string>
     <string name="title_activity_alarm_details">AlarmDetailsActivity</string>
     <string name="save">Lưu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="setting">Cài đặt</string>
+    <string name="sleep_setting">Giờ đi ngủ</string>
+    <string name="event_setting" >Sự kiện</string>
+    <string name="about_setting">Giới thiệu phần mềm</string>
+    <string name="reset">Đặt lại</string>
+    <string name="sleepContent">Các chuyên gia nghiên cứu về giấc ngủ chỉ ra cần ngủ đủ ít nhất 7 tiếng mỗi đêm để đảm bảo cơ thể được tỉnh táo. Tùy thuộc vào hoàn cảnh, môi trường của từng người mà tính toán giờ ngủ cho bản thân hợp lý. Đặc biệt, giấc ngủ nên bắt đầu từ trước 24h.</string>
 </resources>
