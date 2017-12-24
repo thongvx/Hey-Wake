@@ -9,7 +9,9 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class FirebaseService {
     public static final FirebaseDatabase database = FirebaseDatabase.getInstance();
-    public static final DatabaseReference myRef = database.getReference(ConstantsService.REFERENCE);
+    public static final DatabaseReference myRef = database.getReference(ConstantsService.MULTIPLECHOICEQUESTION);
+    public static final DatabaseReference quoteRef = database.getReference(ConstantsService.QUOTE);
+
 
 
 }

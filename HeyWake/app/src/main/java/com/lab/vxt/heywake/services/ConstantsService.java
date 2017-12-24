@@ -5,7 +5,7 @@ package com.lab.vxt.heywake.services;
  */
 
 public class ConstantsService {
-    public static final String REFERENCE = "MultipleChoiceQuestion";
+    public static final String MULTIPLECHOICEQUESTION = "MultipleChoiceQuestion";
     public static final String QUESTION = "q";
     public static final String FALSE1 = "f1";
     public static final String FALSE2 = "f2";
@@ -13,4 +13,6 @@ public class ConstantsService {
     public static final String TRUE4 = "t";
 
     public static final String LOAD_DATA_FAIL = "Something went wrong with load data";
+    public static final String QUOTE = "Quotes";
+
 }

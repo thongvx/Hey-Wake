@@ -42,4 +42,16 @@
     <string name="about_setting">Giới thiệu phần mềm</string>
     <string name="reset">Đặt lại</string>
     <string name="sleepContent">Các chuyên gia nghiên cứu về giấc ngủ chỉ ra cần ngủ đủ ít nhất 7 tiếng mỗi đêm để đảm bảo cơ thể được tỉnh táo. Tùy thuộc vào hoàn cảnh, môi trường của từng người mà tính toán giờ ngủ cho bản thân hợp lý. Đặc biệt, giấc ngủ nên bắt đầu từ trước 24h.</string>
+
+    <string-array name="quotes">
+        <item>Life is not fair, get used to it.</item>
+        <item>Đừng bao giờ chia sẻ những bí mật của bạn với bất cứ ai vì nó có thể hủy hoại bạn. Đây có lẽ là lời khuyên quan trọng nhất đời.</item>
+        <item>Cuộc sống cũng tương tự như một trò đấm bốc. Thất bại không được tuyên bố khi bạn ngã xuống mà là khi bạn từ chối đứng dậy</item>
+        <item>Cái tôi chính là thứ duy nhất hủy hoại một mối quan hệ. Hãy là một người trưởng thành, buông bỏ cái tôi của chính mình.</item>
+        <item>Niềm tin chính là bước đi bước đầu tiên ngay cả khi bạn không nhìn thấy toàn bộ chiếc cầu thang.</item>
+        <item>Chiếc túi rỗng dạy bạn một triệu điều trong cuộc sống nhưng chiếc túi đầy lại làm hỏng bạn trong một triệu cách.</item>
+        <item>Những người sai luôn dạy bạn những bài học đúng trong đời. Đó gọi là kinh nghiệm sống.</item>
+        <item>Tất cả mọi thứ chỉ quý giá tại 2 thời điểm: Trước khi có được và sau khi mất đi.</item>
+        <item>2 điều mang lại hạnh phúc và thành công trong cuộc sống: Cách bạn xoay xở khi không có gì và thái độ của bạn khi bạn có mọi thứ.</item>
+    </string-array>
 </resources>
