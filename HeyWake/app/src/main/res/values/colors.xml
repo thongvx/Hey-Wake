@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#5B2C6F</color>
-    <color name="colorPrimaryDark">#4A235A</color>
-    <color name="colorAccent">#5B2C6F</color>
+    <color name="colorPrimary">#44418e</color>
+    <color name="colorPrimaryDark">#302e68</color>
+    <color name="colorAccent">#4945ac</color>
 
 
     //Màn hình walk throught
