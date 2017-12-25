@@ -11,12 +11,29 @@ import android.hardware.SensorManager;
 
 public class ShakeDetector implements SensorEventListener {
 
-    private static final float SHAKE_THRESHOLD_GRAVITY = 2.7F;
-    private static final int SHAKE_SLOP_TIME_MS = 500;
-    private static final int SHAKE_COUNT_RESET_TIME_MS = 3000;
+    public static final float SHAKE_THRESHOLD_GRAVITY = 2.7F;
+    public static final int SHAKE_SLOP_TIME_MS = 500;
+    public static final int SHAKE_COUNT_RESET_TIME_MS = 3000;
 
     private OnShakeListener mListener;
     private long mShakeTimestamp;
+
+    public long getmShakeTimestamp() {
+        return mShakeTimestamp;
+    }
+
+    public void setmShakeTimestamp(long mShakeTimestamp) {
+        this.mShakeTimestamp = mShakeTimestamp;
+    }
+
+    public int getmShakeCount() {
+        return mShakeCount;
+    }
+
+    public void setmShakeCount(int mShakeCount) {
+        this.mShakeCount = mShakeCount;
+    }
+
     private int mShakeCount;
 
     public void setOnShakeListener(OnShakeListener listener) {
@@ -26,6 +43,7 @@ public class ShakeDetector implements SensorEventListener {
     public interface OnShakeListener {
         public void onShake(int count);
     }
+
     @Override
     public void onSensorChanged(SensorEvent sensorEvent) {
         if (mListener != null) {
@@ -59,6 +77,8 @@ public class ShakeDetector implements SensorEventListener {
             }
         }
     }
+
+
 
     @Override
     public void onAccuracyChanged(Sensor sensor, int i) {
