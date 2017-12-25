@@ -11,6 +11,7 @@ import android.widget.Toast;
 
 import com.lab.vxt.heywake.R;
 import com.lab.vxt.heywake.ShakeDetector;
+import com.lab.vxt.heywake.untils.AlarmManagerHelper;
 
 public class AlarmShakeActivity extends AppCompatActivity {
 
@@ -18,6 +19,11 @@ public class AlarmShakeActivity extends AppCompatActivity {
     private Sensor mAccelerometer;
     private ShakeDetector mShakeDetector;
     private TextView textViewCount;
+    private TextView textViewClock;
+    private TextView textViewTitle;
+    private TextView textViewDescription;
+
+    private int numberRepeate;
 
     private MediaPlayer ring;
 
@@ -27,7 +33,25 @@ public class AlarmShakeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_alarm_shake);
 
+
+        String name = getIntent().getStringExtra(AlarmManagerHelper.NAME);
+        int timeHour = getIntent().getIntExtra(AlarmManagerHelper.TIME_HOUR, 0);
+        int timeMinute = getIntent().getIntExtra(AlarmManagerHelper.TIME_MINUTE, 0);
+        String tone = getIntent().getStringExtra(AlarmManagerHelper.TONE);
+        String style = getIntent().getStringExtra(AlarmManagerHelper.MODE);
+        numberRepeate = getIntent().getIntExtra(AlarmManagerHelper.NUM_REPEATE,0);
+
+
+
         textViewCount = (TextView) findViewById(R.id.textViewCount);
+        textViewClock = (TextView)findViewById(R.id.textViewClock);
+        textViewDescription = (TextView)findViewById(R.id.textViewDescription);
+        textViewTitle = (TextView)findViewById(R.id.textViewTitle);
+
+        textViewTitle.setText(name);
+        textViewDescription.setText("Lắc điện thoại "+numberRepeate+" lần để tắt!");
+        textViewClock.setText(String.format("%02d : %02d", timeHour, timeMinute));
+
 
         ring= MediaPlayer.create(AlarmShakeActivity.this,R.raw.song);
         ring.start();
@@ -48,8 +72,11 @@ public class AlarmShakeActivity extends AppCompatActivity {
     private void handleShakeEvent(int count) {
         textViewCount.setText(count+"");
         Toast.makeText(this, "shake", Toast.LENGTH_SHORT).show();
-        if(count == 5)
+        if(count == numberRepeate){
             ring.stop();
+            finish();
+        }
+
 
     }
 

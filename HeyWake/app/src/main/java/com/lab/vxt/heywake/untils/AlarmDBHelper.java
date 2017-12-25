@@ -30,7 +30,10 @@ public class AlarmDBHelper extends SQLiteOpenHelper {
             AlarmContract.Alarm.COLUMN_NAME_ALARM_REPEAT_DAYS + " TEXT," +
             AlarmContract.Alarm.COLUMN_NAME_ALARM_REPEAT_WEEKLY + " BOOLEAN," +
             AlarmContract.Alarm.COLUMN_NAME_ALARM_TONE + " TEXT," +
-            AlarmContract.Alarm.COLUMN_NAME_ALARM_ENABLED + " BOOLEAN" + " )";
+            AlarmContract.Alarm.COLUMN_NAME_ALARM_ENABLED + " BOOLEAN," +
+            AlarmContract.Alarm.COLUMN_STYLE_ALRM + " TEXT,"+
+            AlarmContract.Alarm.COLUMN_COUNT_REPEATE + " INTEGER"+ " )";
+
 
     private static final String SQL_DELETE_ALARM =
             "DROP TABLE IF EXISTS " + AlarmContract.Alarm.TABLE_NAME;
@@ -46,7 +49,13 @@ public class AlarmDBHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         // TODO Auto-generated method stub
-        db.execSQL(SQL_CREATE_ALARM);
+        Log.d("sqlday",SQL_CREATE_ALARM);
+        try{
+            db.execSQL(SQL_CREATE_ALARM);
+        }catch (Exception e){
+            Log.d("VXT27","loi");
+        }
+
     }
 
     @Override
@@ -70,6 +79,9 @@ public class AlarmDBHelper extends SQLiteOpenHelper {
         for (int i = 0; i < repeatingDays.length; ++i) {
             model.setRepeatingDay(i, repeatingDays[i].equals("false") ? false : true);
         }
+        model.style = c.getString(c.getColumnIndex(AlarmContract.Alarm.COLUMN_STYLE_ALRM));
+        model.numOfReapeat = c.getInt(c.getColumnIndex(AlarmContract.Alarm.COLUMN_COUNT_REPEATE));
+
 
         return model;
     }
@@ -82,13 +94,15 @@ public class AlarmDBHelper extends SQLiteOpenHelper {
         values.put(AlarmContract.Alarm.COLUMN_NAME_ALARM_REPEAT_WEEKLY, model.repeatWeekly);
         values.put(AlarmContract.Alarm.COLUMN_NAME_ALARM_TONE, model.alarmTone != null ? model.alarmTone.toString() : "");
         values.put(AlarmContract.Alarm.COLUMN_NAME_ALARM_ENABLED, model.isEnabled);
+        values.put(AlarmContract.Alarm.COLUMN_STYLE_ALRM,model.style);
+        values.put(AlarmContract.Alarm.COLUMN_COUNT_REPEATE,model.numOfReapeat);
 
         String repeatingDays = "";
         for (int i = 0; i<7; ++i) {
             repeatingDays += model.getRepeatingDay(i) + ",";
         }
         values.put(AlarmContract.Alarm.COLUMN_NAME_ALARM_REPEAT_DAYS, repeatingDays);
-
+       Log.e("Loi gi",values.get(AlarmContract.Alarm.COLUMN_STYLE_ALRM)+"");
         return values;
     }
 
@@ -131,14 +145,14 @@ public class AlarmDBHelper extends SQLiteOpenHelper {
         List<AlarmModel> alarmList = new ArrayList<AlarmModel>();
 
         while (c.moveToNext()) {
+            Log.d("VXT1",alarmList.size()+"");
             alarmList.add(populateModel(c));
-          //  Log.d("Alarm style",populateModel(c).style);
         }
 
         if (!alarmList.isEmpty()) {
-            /*for (AlarmModel alarmModel : alarmList){
-                Log.d("Alarm : ",alarmModel.toString());
-            }*/
+            for (AlarmModel alarmModel : alarmList) {
+                Log.d("Alarm : ", alarmModel.toString());
+            }
             return alarmList;
         }
         return null;

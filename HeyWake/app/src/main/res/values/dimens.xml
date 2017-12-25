@@ -31,4 +31,7 @@
     <dimen name="padding_setting">10dp</dimen>
     <dimen name="padding_icon_button_setting">20dp</dimen>
 
+
+    <dimen name="text_medium_default">24dp</dimen>
+
 </resources>

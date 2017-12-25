@@ -1,26 +1,26 @@
-<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
 
     <TextView
-        android:id="@+id/alarm_screen_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
-        android:text="Alarm!"
-        android:textSize="38dp"/>
-
-    <TextView
+        android:gravity="center_horizontal"
         android:id="@+id/alarm_screen_time"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="00 : 00"
         android:textSize="52dp"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@+id/alarm_screen_title"
-        android:layout_marginTop="28dp"/>
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="6dp"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <TextView
         android:id="@+id/alarm_screen_name"
@@ -28,18 +28,56 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/alarm_screen_dismiss"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="60dp"
-        android:text="Alarm name" />
+        android:text="Ngày mới đến rồi !"
+        android:textSize="@dimen/text_size_clock"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_screen_time" />
 
     <Button
+        android:background="@drawable/bg_round_button"
+        android:textColor="@color/white"
         android:id="@+id/alarm_screen_dismiss"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Dismiss"
+        android:text="Dậy thôi"
         android:textSize="38dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="106dp"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/image_default_alarm"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/alarm_screen_time" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhấn ba lần vào nút phía dưới để tắt"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/alarm_screen_dismiss" />
 
 
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.lab.vxt.heywake.R;
 import com.lab.vxt.heywake.untils.AlarmManagerHelper;
@@ -23,6 +24,7 @@ public class AlarmScreen extends AppCompatActivity {
 
     private PowerManager.WakeLock mWakelock;
     private MediaPlayer mMedia;
+    int k= 3;
 
     private static int WAKELOCK_TIME = 60 * 1000;
 
@@ -36,6 +38,7 @@ public class AlarmScreen extends AppCompatActivity {
         int timeHour = getIntent().getIntExtra(AlarmManagerHelper.TIME_HOUR, 0);
         int timeMinute = getIntent().getIntExtra(AlarmManagerHelper.TIME_MINUTE, 0);
         String tone = getIntent().getStringExtra(AlarmManagerHelper.TONE);
+        String style = getIntent().getStringExtra(AlarmManagerHelper.MODE);
 
 
         TextView tvName = (TextView) findViewById(R.id.alarm_screen_name);
@@ -45,13 +48,18 @@ public class AlarmScreen extends AppCompatActivity {
         tvTime.setText(String.format("%02d : %02d", timeHour, timeMinute));
 
         Button dismissBtn = (Button) findViewById(R.id.alarm_screen_dismiss);
+
         dismissBtn.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 // TODO Auto-generated method stub
-                mMedia.stop();
-                finish();
+                k = k - 1;
+                Toast.makeText(AlarmScreen.this,"Ấn "+k+" lần nữa để tắt báo thức !",Toast.LENGTH_SHORT).show();
+                if(k == 0) {
+                    mMedia.stop();
+                    finish();
+                }
             }
         });
 

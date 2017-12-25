@@ -42,6 +42,8 @@ public class AlarmModel {
         this.alarmTone = alarmTone;
         this.name = name;
         this.isEnabled = isEnabled;
+        this.style = style;
+        this.numOfReapeat = numOfReapeat;
     }
 
     public void setRepeatingDay(int dayOfWeek, boolean value) {
@@ -54,7 +56,7 @@ public class AlarmModel {
 
     public String toString(){
 
-        return this.timeHour+" : "+ timeMinute + " name : "+name +" isEnable :" +isEnabled +", id: "+id;
+        return this.timeHour+" : "+ timeMinute + " name : "+name +" isEnable :" +isEnabled +", id: "+id+" , style"+style;
     }
 
 }

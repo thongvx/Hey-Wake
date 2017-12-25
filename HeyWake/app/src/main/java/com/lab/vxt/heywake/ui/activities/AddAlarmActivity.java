@@ -13,6 +13,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -63,6 +64,7 @@ public class AddAlarmActivity extends AppCompatActivity {
         //Trong trường hợp chỉ tạo mới
         alarmDetails = new AlarmModel();
         alarmDetails.style = Constants.DEFAULT_MODE;
+        Log.d("thong bug",alarmDetails.style);
     }
 
     @Override
@@ -308,7 +310,7 @@ public class AddAlarmActivity extends AppCompatActivity {
         buttonOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                alarmDetails.style = Constants.COUNT_NUMBER_MODE;
+                alarmDetails.style = Constants.SHAKE_MODE;
                 alarmDetails.numOfReapeat = Integer.parseInt(displayedValues[numberPickerCount.getValue()]);
             }
         });

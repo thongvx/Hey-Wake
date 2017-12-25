@@ -24,7 +24,8 @@ public class AlarmManagerHelper extends BroadcastReceiver {
     public static final String TIME_HOUR = "timeHour";
     public static final String TIME_MINUTE = "timeMinute";
     public static final String TONE = "alarmTone";
-
+    public static final String MODE = "mode";
+    public static final String NUM_REPEATE = "numrepeate" ; // số lần lặp lại báo thức
 
     String TAG = this.getClass().getSimpleName();
 
@@ -156,6 +157,8 @@ public class AlarmManagerHelper extends BroadcastReceiver {
         myIntent.putExtra(TIME_HOUR, alarm.timeHour);
         myIntent.putExtra(TIME_MINUTE, alarm.timeMinute);
         myIntent.putExtra(TONE, alarm.alarmTone.toString());
+        myIntent.putExtra(MODE,alarm.style);
+        myIntent.putExtra(NUM_REPEATE, alarm.numOfReapeat);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context,(int) alarm.id,myIntent,PendingIntent.FLAG_UPDATE_CURRENT);
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(),pendingIntent);
@@ -190,12 +193,10 @@ public class AlarmManagerHelper extends BroadcastReceiver {
     private static PendingIntent createPendingIntent(Context context, AlarmModel model) {
         Intent intent = new Intent(context, AlarmReciever.class);
         intent.putExtra(ID, model.id);
-        intent.putExtra(NAME, model.name);
+        intent.putExtra(NAME, model.style);
         intent.putExtra(TIME_HOUR, model.timeHour);
         intent.putExtra(TIME_MINUTE, model.timeMinute);
         intent.putExtra(TONE, model.alarmTone.toString());
-        intent.putExtra("MODE",model.style);
-        intent.putExtra("NUM_REPEATE",model.numOfReapeat);
 
         return PendingIntent.getService(context, (int) model.id, intent, PendingIntent.FLAG_UPDATE_CURRENT);
     }
