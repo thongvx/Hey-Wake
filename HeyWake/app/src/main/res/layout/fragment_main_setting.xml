@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/buttonSleep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_setting"
+        android:background="@drawable/bg_add_alarm"
+        android:backgroundTint="@color/blue_A200"
+        android:drawableLeft="@drawable/ic_access_alarm_white_24dp"
+        android:paddingLeft="@dimen/padding_icon_button_setting"
+        android:text="@string/sleep_setting"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/buttonEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_setting"
+        android:background="@drawable/bg_add_alarm"
+        android:backgroundTint="@color/deep_purple_200"
+        android:drawableLeft="@drawable/calendar"
+        android:paddingLeft="@dimen/padding_icon_button_setting"
+        android:text="@string/event_setting"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/buttonAbout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_setting"
+        android:background="@drawable/bg_add_alarm"
+        android:backgroundTint="@color/blue_grey_200"
+        android:drawableLeft="@drawable/about"
+        android:paddingLeft="@dimen/padding_icon_button_setting"
+        android:text="@string/about_setting"
+        android:textColor="#ffffff" />
+
+</LinearLayout>

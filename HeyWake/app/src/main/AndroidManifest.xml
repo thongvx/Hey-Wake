@@ -5,6 +5,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <receiver
         android:name=".reciever.AlarmReciever"
@@ -23,17 +25,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activities.WalkthroughActivity">
+        <activity android:name=".ui.activities.WalkthroughActivity" />
+        <activity
+            android:name=".ui.activities.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.activities.HomeActivity"
-            android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ui.activities.DetailsNewsActivity" />
         <activity
             android:name=".ui.activities.AddAlarmActivity"
@@ -52,6 +54,10 @@
             </intent-filter>
         </receiver>
 
+        <activity android:name=".ui.activities.QuoteActivity" />
+        <activity android:name=".ui.activities.SettingActivity" />
+        <activity android:name=".ui.activities.AlarmShakeActivity" />
+        <activity android:name=".ui.activities.SplashActivity"></activity>
     </application>
 
 </manifest>

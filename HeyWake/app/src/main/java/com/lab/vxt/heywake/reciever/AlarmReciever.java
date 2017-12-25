@@ -6,9 +6,11 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.NotificationCompat;
+import android.widget.Toast;
 
 import com.lab.vxt.heywake.R;
 import com.lab.vxt.heywake.ui.activities.AlarmScreen;
+import com.lab.vxt.heywake.untils.Constants;
 
 /**
  * Created by VXT on 12/4/2017.
@@ -31,10 +33,20 @@ public class AlarmReciever extends BroadcastReceiver {
 
         NotificationManager notificationManager = (NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
         notificationManager.notify(1,builder.build());
+        String mode = intent.getExtras().getString("MODE");
+        if (mode != null){
+            if (mode.equals(Constants.DEFAULT_MODE)){
+                Intent alarmIntent = new Intent(context, AlarmScreen.class);
+                alarmIntent.putExtras(intent);
+                context.startActivity(alarmIntent);
+            }
+        }else {
 
-        Intent alarmIntent = new Intent(context, AlarmScreen.class);
-        alarmIntent.putExtras(intent);
-        context.startActivity(alarmIntent);
+            Toast.makeText(context,"K dk",Toast.LENGTH_SHORT).show();
+        }
+
+
+
 
 
     }

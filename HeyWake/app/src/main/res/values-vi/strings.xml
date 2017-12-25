@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">HeyWake</string>
+
+    //Man hinh walkthrought
+    <string name="next">TIẾP</string>
+    <string name="skip">BỎ QUA</string>
+
+    <string name="screen1">Chào mừng!</string>
+    <string name="screen2">Chào ngày mới \hoàn toàn khác </string>
+    <string name="screen3">Tin tức luôn cập nhật</string>
+    <string name="screen4">Hey Wake ≡ "Gấu"</string>
+    <string name="screen5">Bắt đầu thôi!</string>
+    <string name="description_screen1">Chúng tôi biết mùa đông rất lạnh... nhưng đừng vì vậy mà ngủ dậy muộn!</string>
+    <string name="description_screen2">Không chỉ là một cú click, bạn sẽ thực sự bị thuyết phục khi tỉnh dậy với những trò chơi có một không hai.</string>
+    <string name="description_screen3">Chúng tôi luôn mang đến cho bạn những tin tức mới nhất hàng ngày và được tổng hợp lại đầy đủ nhất.</string>
+    <string name="description_screen4">Không cần phải có "Gấu"  nhắc đi ngủ, Hey Wake sẽ là người bạn luôn sẵn sàng nhắc bạn đi ngủ mỗi tối</string>
+    <string name="description_screen5">Còn bây giờ, hãy cũng Hey Wake trải nghiệm những tính năng thú vị nhé!</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+>>>>>>> develop
+
+
+    <string name="way_to_turn_off">Cách tắt báo thức</string>
+    <string name="default_way">Mặc định</string>
+    <string name="repeate">Lặp lại</string>
+    <string name="not_repeate">Không</string>
+    <string name="turn_vibrate_on">Rung khi báo thức</string>
+    <string name="alarm_title">Nhãn báo thức</string>
+    <string name="ring_tone">Nhạc chuông</string>
+    <string name="default_ring_tone">Mặc định</string>
+    <string name="cancle">HỦY</string>
+    <string name="ok">OK</string>
+
+    <string name="title_add_alarm">Thêm báo thức</string>
+    <string name="title_activity_alarm_details">AlarmDetailsActivity</string>
+    <string name="save">Lưu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="setting">Cài đặt</string>
+    <string name="sleep_setting">Giờ đi ngủ</string>
+    <string name="event_setting" >Sự kiện</string>
+    <string name="about_setting">Giới thiệu phần mềm</string>
+    <string name="reset">Đặt lại</string>
+    <string name="sleepContent">Các chuyên gia nghiên cứu về giấc ngủ chỉ ra cần ngủ đủ ít nhất 7 tiếng mỗi đêm để đảm bảo cơ thể được tỉnh táo. Tùy thuộc vào hoàn cảnh, môi trường của từng người mà tính toán giờ ngủ cho bản thân hợp lý. Đặc biệt, giấc ngủ nên bắt đầu từ trước 24h.</string>
+
+
+    <string name="choose_mode">Chọn cách tắt</string>
+    <string name="shake_number">Số lần lắc</string>
+    <string name="shake">Lắc để tắt</string>
+    <string name="dafault">Mặc đinh</string>
+    <string name="task_memory">Game lật ô</string>
+    <string name="count_number">Game đếm số</string>
+</resources>

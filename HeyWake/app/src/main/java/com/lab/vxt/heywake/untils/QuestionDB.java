@@ -5,7 +5,6 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.util.Log;
 
 import com.lab.vxt.heywake.models.MultipleChoiceQuestion;
 
@@ -35,7 +34,6 @@ public class QuestionDB extends SQLiteOpenHelper {
                 Constants.COLUMN_NAME_QUESTION_TRUE4+" TEXT, "+
                 Constants.COLUMN_NAME_QUESTION_ISUSED+" INTEGER DEFAULT 0)";
         sqLiteDatabase.execSQL(sqlQuery);
-        Log.d("sql", sqlQuery);
     }
 
     @Override

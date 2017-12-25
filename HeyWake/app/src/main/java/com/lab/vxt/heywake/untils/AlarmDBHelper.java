@@ -132,9 +132,8 @@ public class AlarmDBHelper extends SQLiteOpenHelper {
 
         while (c.moveToNext()) {
             alarmList.add(populateModel(c));
-
+          //  Log.d("Alarm style",populateModel(c).style);
         }
-
 
         if (!alarmList.isEmpty()) {
             /*for (AlarmModel alarmModel : alarmList){

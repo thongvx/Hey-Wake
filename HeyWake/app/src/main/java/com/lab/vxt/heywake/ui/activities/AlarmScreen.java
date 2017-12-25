@@ -37,6 +37,7 @@ public class AlarmScreen extends AppCompatActivity {
         int timeMinute = getIntent().getIntExtra(AlarmManagerHelper.TIME_MINUTE, 0);
         String tone = getIntent().getStringExtra(AlarmManagerHelper.TONE);
 
+
         TextView tvName = (TextView) findViewById(R.id.alarm_screen_name);
         tvName.setText(name);
 

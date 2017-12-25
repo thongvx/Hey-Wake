@@ -136,7 +136,7 @@ public class WalkthroughActivity extends BaseActivity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(WalkthroughActivity.this, HomeActivity.class));
+        startActivity(new Intent(WalkthroughActivity.this, SplashActivity.class));
         finish();
     }
 

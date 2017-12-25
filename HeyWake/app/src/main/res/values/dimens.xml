@@ -28,4 +28,7 @@
     <dimen name="margin_left_right_cardview">8dp</dimen>
     <dimen name="textsize_title_addalarm">20dp</dimen>
 
+    <dimen name="padding_setting">10dp</dimen>
+    <dimen name="padding_icon_button_setting">20dp</dimen>
+
 </resources>
