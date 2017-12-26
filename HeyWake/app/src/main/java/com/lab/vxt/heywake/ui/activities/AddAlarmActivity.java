@@ -13,13 +13,13 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.NumberPicker;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -55,6 +55,8 @@ public class AddAlarmActivity extends AppCompatActivity {
     private ConstraintLayout previousConstraintLayout;
 
 
+    private ImageView imageViewAlarmMode;
+    private TextView textViewAlarmMode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +66,8 @@ public class AddAlarmActivity extends AppCompatActivity {
         //Trong trường hợp chỉ tạo mới
         alarmDetails = new AlarmModel();
         alarmDetails.style = Constants.DEFAULT_MODE;
-        Log.d("thong bug",alarmDetails.style);
+
+
     }
 
     @Override
@@ -86,7 +89,6 @@ public class AddAlarmActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         if (id == R.id.save_item) {
-
             updateAlarm();
             alarmDBHelper.createAlarm(alarmDetails);
             AlarmManagerHelper.setAlarms(AddAlarmActivity.this);
@@ -114,6 +116,9 @@ public class AddAlarmActivity extends AppCompatActivity {
 
         textViewDate = (TextView)findViewById(R.id.textViewDate);
         textViewTuntTitle = (TextView)findViewById(R.id.textViewTuneTitle);
+
+        textViewAlarmMode = (TextView)findViewById(R.id.textViewAlarmMode);
+        imageViewAlarmMode = (ImageView)findViewById(R.id.imageViewAlarmMode);
 
         constraintLayoutAlarmMode.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -243,6 +248,7 @@ public class AddAlarmActivity extends AppCompatActivity {
     }
 
     private void createDialogChooseStyle(){
+
         LayoutInflater inflater = getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.dialog_choose_style,null);
         constraintLayoutDefault = (ConstraintLayout)dialogView.findViewById(R.id.constraintLayoutDefault);
@@ -252,6 +258,7 @@ public class AddAlarmActivity extends AppCompatActivity {
         previousConstraintLayout = constraintLayoutDefault;
         dialogView.setBackgroundColor(Color.TRANSPARENT);
 
+        getCurrentSelect();
 
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setView(dialogView);
@@ -261,6 +268,9 @@ public class AddAlarmActivity extends AppCompatActivity {
             public void onClick(View view) {
                 onclick(constraintLayoutRememberTask);
                 alarmDetails.style = Constants.SHAKE_MODE;
+                imageViewAlarmMode.setImageDrawable((getResources().getDrawable(R.drawable.ic_games_black_24dp)));
+                textViewAlarmMode.setText(R.string.task_memory);
+                chooseModeDialog.dismiss();
             }
         });
         constraintLayoutDefault.setOnClickListener(new View.OnClickListener() {
@@ -268,6 +278,10 @@ public class AddAlarmActivity extends AppCompatActivity {
             public void onClick(View view) {
                 onclick(constraintLayoutDefault);
                 alarmDetails.style = Constants.DEFAULT_MODE;
+                imageViewAlarmMode.setImageDrawable((getResources().getDrawable(R.drawable.ic_alarm_black_24dp)));
+                textViewAlarmMode.setText(R.string.dafault);
+                chooseModeDialog.dismiss();
+
             }
         });
         constraintLayoutShake.setOnClickListener(new View.OnClickListener() {
@@ -275,7 +289,6 @@ public class AddAlarmActivity extends AppCompatActivity {
             public void onClick(View view) {
                 onclick(constraintLayoutShake);
                 createChooseNumberDialog();
-
                 chooseModeDialog.dismiss();
 
             }
@@ -285,6 +298,9 @@ public class AddAlarmActivity extends AppCompatActivity {
             public void onClick(View view) {
                 onclick(constraintLayoutCountNum);
                 alarmDetails.style = Constants.COUNT_NUMBER_MODE;
+                imageViewAlarmMode.setImageDrawable((getResources().getDrawable(R.drawable.ic_games_black_24dp)));
+                textViewAlarmMode.setText(R.string.count_number);
+                chooseModeDialog.dismiss();
             }
         });
 
@@ -306,12 +322,16 @@ public class AddAlarmActivity extends AppCompatActivity {
 
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setView(dialogView);
-        AlertDialog chooseModeDialog = alert.create();
+        final AlertDialog chooseModeDialog = alert.create();
         buttonOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 alarmDetails.style = Constants.SHAKE_MODE;
                 alarmDetails.numOfReapeat = Integer.parseInt(displayedValues[numberPickerCount.getValue()]);
+                imageViewAlarmMode.setImageDrawable((getResources().getDrawable(R.drawable.ic_vibration_black_24dp)));
+                textViewAlarmMode.setText(R.string.shake);
+                chooseModeDialog.dismiss();
+
             }
         });
         chooseModeDialog.getWindow().getDecorView().setBackgroundResource(android.R.color.transparent);
@@ -322,6 +342,28 @@ public class AddAlarmActivity extends AppCompatActivity {
             layout.setBackgroundResource(R.drawable.bg_alarmode_active);
             previousConstraintLayout.setBackgroundResource(R.drawable.bg_alarmode_inactive);
             previousConstraintLayout = layout;
+        }
+    }
+
+    private void getCurrentSelect(){
+        if (alarmDetails.style.equals(Constants.DEFAULT_MODE)){
+            constraintLayoutDefault.setBackgroundResource(R.drawable.bg_alarmode_active);
+            previousConstraintLayout = constraintLayoutDefault;
+        }
+        if (alarmDetails.style.equals(Constants.SHAKE_MODE)){
+            constraintLayoutShake.setBackgroundResource(R.drawable.bg_alarmode_active);
+            previousConstraintLayout = constraintLayoutShake;
+
+        }
+        if (alarmDetails.style.equals(Constants.MEMORY_TASK_MODE)){
+
+            constraintLayoutRememberTask.setBackgroundResource(R.drawable.bg_alarmode_active);
+            previousConstraintLayout = constraintLayoutRememberTask;
+        }
+        if (alarmDetails.style.equals(Constants.COUNT_NUMBER_MODE)){
+            constraintLayoutCountNum.setBackgroundResource(R.drawable.bg_alarmode_active);
+            previousConstraintLayout = constraintLayoutCountNum;
+
         }
     }
 }

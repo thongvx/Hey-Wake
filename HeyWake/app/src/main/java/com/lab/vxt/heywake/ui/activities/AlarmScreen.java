@@ -75,6 +75,12 @@ public class AlarmScreen extends AppCompatActivity {
                     mMedia.prepare();
                     mMedia.start();
                 }
+            }else{
+                mMedia = MediaPlayer.create(AlarmScreen.this,R.raw.song);
+                mMedia.setAudioStreamType(AudioManager.STREAM_ALARM);
+                mMedia.setLooping(true);
+                mMedia.prepare();
+                mMedia.start();
             }
         } catch (Exception e) {
             // TODO: handle exception

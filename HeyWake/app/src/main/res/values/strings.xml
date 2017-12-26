@@ -19,6 +19,7 @@
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
 
+    <string name="add_remider">Bạn chưa có báo thức nào\n Thêm báo thức nào!</string>
 
     <string name="way_to_turn_off">Guide to turn off the alarm</string>
     <string name="default_way">Default</string>

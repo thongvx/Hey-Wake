@@ -39,7 +39,7 @@
                 tools:layout_editor_absoluteX="24dp">
                 <android.support.constraint.ConstraintLayout
                     android:id="@+id/constraintLayoutDefault"
-                    android:background="@drawable/bg_alarmode_active"
+                    android:background="@drawable/bg_alarmode_inactive"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 

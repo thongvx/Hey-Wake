@@ -7,22 +7,22 @@
 
     //Màn hình walk throught
     <color name="screen1">#6E60B5</color>
-    <color name="screen2">#FFF3D1</color>
+    <color name="screen2">#dabe6e</color>
     <color name="screen3">#57BBBB</color>
     <color name="screen4">#AA789E</color>
     <color name="screen5">#628C9A</color>
     
-    <color name="dot_dark_screen1">#00838F</color>
-    <color name="dot_dark_screen2">#6A1B9A</color>
-    <color name="dot_dark_screen3">#00695C</color>
-    <color name="dot_dark_screen4">#EF6C00</color>
-    <color name="dot_dark_screen5">#3E2723</color>
+    <color name="dot_dark_screen1">#594c9b</color>
+    <color name="dot_dark_screen2">#ab934f</color>
+    <color name="dot_dark_screen3">#3a9393</color>
+    <color name="dot_dark_screen4">#864f79</color>
+    <color name="dot_dark_screen5">#296274</color>
 
-    <color name="dot_light_screen1">#E0F7FA</color>
-    <color name="dot_light_screen2">#E1BEE7</color>
-    <color name="dot_light_screen3">#B0CBC4</color>
-    <color name="dot_light_screen4">#FFECB2</color>
-    <color name="dot_light_screen5">#A1887F</color>
+    <color name="dot_light_screen1">#988bd9</color>
+    <color name="dot_light_screen2">#fae197</color>
+    <color name="dot_light_screen3">#83eaea</color>
+    <color name="dot_light_screen4">#e1acd4</color>
+    <color name="dot_light_screen5">#9ccedf</color>
 
     <array name="dot_active">
         <item>@color/dot_light_screen1</item>

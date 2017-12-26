@@ -18,8 +18,8 @@
     <string name="title_activity_home">HomeActivity</string>
     <string name="action_settings">Settings</string>
     <string name="section_format">Hello World from section: %1$d</string>
->>>>>>> develop
 
+    <string name="add_remider">Bạn chưa có báo thức nào\n Thêm báo thức nào!</string>
 
     <string name="way_to_turn_off">Cách tắt báo thức</string>
     <string name="default_way">Mặc định</string>
@@ -43,7 +43,6 @@
     <string name="about_setting">Giới thiệu phần mềm</string>
     <string name="reset">Đặt lại</string>
     <string name="sleepContent">Các chuyên gia nghiên cứu về giấc ngủ chỉ ra cần ngủ đủ ít nhất 7 tiếng mỗi đêm để đảm bảo cơ thể được tỉnh táo. Tùy thuộc vào hoàn cảnh, môi trường của từng người mà tính toán giờ ngủ cho bản thân hợp lý. Đặc biệt, giấc ngủ nên bắt đầu từ trước 24h.</string>
-
 
     <string name="choose_mode">Chọn cách tắt</string>
     <string name="shake_number">Số lần lắc</string>
