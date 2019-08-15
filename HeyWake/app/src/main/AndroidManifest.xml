@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lab.vxt.heywake">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <receiver
+        android:name=".reciever.AlarmReciever"
+        android:enabled="true"
+        android:exported="true"
+        android:process=":remote">
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" />
+        </intent-filter>
+    </receiver>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_app"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activities.WalkthroughActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".ui.activities.DetailsNewsActivity" />
+        <activity
+            android:name=".ui.activities.AddAlarmActivity"
+            android:label="@string/title_add_alarm"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.activities.AlarmModeActivity" />
+        <activity android:name=".ui.activities.AlarmScreen" />
+
+        <receiver
+            android:name=".reciever.AlarmReciever"
+            android:enabled="true"
+            android:exported="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ui.activities.QuoteActivity" />
+        <activity android:name=".ui.activities.AlarmShakeActivity" />
+        <activity android:name=".ui.activities.SplashActivity"></activity>
+    </application>
+
+</manifest>

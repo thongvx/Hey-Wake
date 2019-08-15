@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">HeyWake</string>
+
+    //Man hinh walkthrought
+    <string name="next">NEXT</string>
+    <string name="skip">IGNORE</string>
+
+    <string name="screen1">Welcome!</string>
+    <string name="screen2">Welcome to a completely \ndifferent day </string>
+    <string name="screen3">The news is always updated</string>
+    <string name="screen4">Hey Wake ≡ "Honey"</string>
+    <string name="screen5">Let\'s start</string>
+    <string name="description_screen1">We know that winter is very cold ... but do not sleep so late!</string>
+    <string name="description_screen2">Not just one click, you will be convinced to wake up with unique games.</string>
+    <string name="description_screen3">The latest daily news and the most comprehensive aggregation will be brought to you</string>
+    <string name="description_screen4">Do not need "honey" to remind you to go to sleep, Hey Wake will be a friend always ready to remind you to go to bed every night</string>
+    <string name="description_screen5">And now, let\'s start with Hey Wake to  has more interesting expearence!</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="add_remider">Bạn chưa có báo thức nào\n Thêm báo thức nào!</string>
+
+    <string name="way_to_turn_off">Guide to turn off the alarm</string>
+    <string name="default_way">Default</string>
+    <string name="repeate">Repeat</string>
+    <string name="not_repeate">No</string>
+    <string name="turn_vibrate_on">Vibrate when alarm</string>
+    <string name="alarm_title">Label</string>
+    <string name="ring_tone">Ringtone</string>
+    <string name="default_ring_tone">Default</string>
+    <string name="cancle">CANCEL</string>
+    <string name="ok">OK</string>
+
+    <string name="title_add_alarm">Add alarm</string>
+    <string name="title_activity_alarm_details">AlarmDetailsActivity</string>
+    <string name="save">Save</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="setting">Settings</string>
+    <string name="sleep_setting">Sleep hour</string>
+    <string name="event_setting">Event</string>
+    <string name="about_setting">Introduction</string>
+    <string name="reset">Reset</string>
+    <string name="sleepContent">Experts\' research indicates that we need at least seven hours of sleep a night to keep our bodies awake. Depending on the circumstances, the environment of each person to calculates the sleep time for himself or herself. In particular, sleep should start before 11PM.</string>
+</resources>

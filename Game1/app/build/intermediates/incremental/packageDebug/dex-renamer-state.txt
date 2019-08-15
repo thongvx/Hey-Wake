@@ -1,0 +1,7 @@
+#Tue Nov 21 21:19:40 ICT 2017
+base.0=E\:\\CongNghePhanMem\\GIT\\Game1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_4fae4dbcf30a29dea796b87b770e00ec0f381a11
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=E\:\\CongNghePhanMem\\GIT\\Game1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_934ef764bdfad2ed34e6888dcc6a39aa0a5d98fc\\classes.dex
+base.1=E\:\\CongNghePhanMem\\GIT\\Game1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_934ef764bdfad2ed34e6888dcc6a39aa0a5d98fc
+file.0=E\:\\CongNghePhanMem\\GIT\\Game1\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_4fae4dbcf30a29dea796b87b770e00ec0f381a11\\classes.dex

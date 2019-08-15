@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nga\.android\build-cache\06443051880084bdb3e1fca4cf04360281deb7d4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="E:\CongNghePhanMem\GIT\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_163196f1843cf86d45bc452cb344064f6e5e3a4a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\CongNghePhanMem\GIT\Game\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="480ac372f78a2b1e771ccc964e1804ecc7583211">
+        <dex dex="E:\CongNghePhanMem\GIT\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_1d1cf10f177f155dcbaa0c1855d9fd624a347b8c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nga\.android\build-cache\b60314fb4249a12613d5c7addc4ded6e340a5996\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="E:\CongNghePhanMem\GIT\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c8f429ec936a01453a5f63450df550ed69b5bb65\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nga\.android\build-cache\a2ea2ee58d226570787646b53c6ef35570eba94d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e176fd06c2ad5b50a2f5cb4de6000a83a7cb48f5">
+        <dex dex="E:\CongNghePhanMem\GIT\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_952facd3dce960c290f490b93037041d02a8c4e1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\CongNghePhanMem\GIT\Game\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="E:\CongNghePhanMem\GIT\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_b61646f081f9168494d0ee246f73956fef6e2967\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Nga\.android\build-cache\8f86f53095596366e02a75bb4b7106484be2801d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="E:\CongNghePhanMem\GIT\Game\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_07f0696eadfe5f597b5f4adafdb0fecb152fc16a\classes.dex" />
+    </item>
+
+</items>

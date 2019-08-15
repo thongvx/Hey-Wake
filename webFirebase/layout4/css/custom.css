@@ -1,0 +1,88 @@
+/* here you can put your own css to customize and override the theme */
+
+.heigth-20 {
+    height: 20px;
+}
+.min-width-200 {
+    width:200px !important
+}
+.table-scrollable>.table>tbody>tr>td{
+    white-space: nowrap; !important;
+    vertical-align: middle;
+}
+
+.table-scrollable .btn-icon-only {
+    height: 27px;
+    width: 27px;
+}
+
+.table-scrollable .btn-icon-only.btn-default {
+    padding: 4px 6px 2px;
+}
+
+
+.table>tbody>tr>td {
+    padding: 4px 8px;
+}
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.custom_search_daterange{
+    width: auto;
+}
+
+.input-daterange input.custom_search{
+    text-align: left; !important;
+}
+
+.icon-ownner {
+    padding: 6px;
+    font-size: 22px;
+}
+
+.label-section {
+    margin-left: 32px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.table-scrollable-agreement {
+    height: 250px;
+    overflow-y: scroll;
+}
+
+.mt-element-step .step-line .mt-step-col {
+    padding: 0;
+}
+
+.modal-full.modal-dialog {
+    width: 90%;
+}
+
+.errors_create_more{
+    color: red;
+    font-size: 13px;
+}
+
+.padding_bottom_create_more{
+    padding-bottom: 30px;
+}
+
+.note_create_more{
+    color: #32c5d2;
+}
+
+.last-tab>a>i {
+    color: black;
+}
+
+.min-width-dashboard {
+    min-width: 120px;
+}
+
+abbr[data-original-title], abbr[title] {
+    text-decoration: none !important;
+    border-bottom: 0px;
+}

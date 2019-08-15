@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Question</string>
+    <string name="titleScoreNeed">Số câu cần trả lời đúng</string>
+    <string name="titleScoreHave">Số câu đã trả lời đúng</string>
+</resources>
